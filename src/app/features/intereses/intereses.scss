@@ -1,0 +1,173 @@
+.intereses-wrapper {
+    min-height: 100vh;
+    background: #0f0c29; // Dark base
+    background: linear-gradient(to bottom, #24243e, #0f0c29);
+    overflow-x: hidden;
+}
+
+.parallax-section {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .parallax-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .bg-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%; // Extra height for parallax movement
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; // Simple parallax
+            filter: brightness(0.5) contrast(1.2);
+            z-index: 1;
+        }
+
+        .overlay-layer {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.2);
+
+            .floating-content {
+                text-align: right;
+                animation: fadeInUp 1.2s ease-out;
+
+                .floating-img {
+                    max-width: 500px;
+                    margin-bottom: 2rem;
+                    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+                    animation: float 4s ease-in-out infinite;
+                }
+
+                h1 {
+                    font-size: clamp(2.5rem, 8vw, 5rem);
+                    letter-spacing: 12px;
+                    text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+}
+
+.info-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    padding: 1.5rem 1rem;
+    margin-top: -70px; // Pull cards over the parallax section
+    position: relative;
+    z-index: 5;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem 1.4rem;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: white;
+    cursor: default;
+
+    &:hover {
+        transform: translateY(-10px) scale(1.05);
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #630745;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(99, 7, 69, 0.3);
+
+        .card-icon {
+            transform: rotateY(180deg) scale(1.2);
+            color: #ff3e81;
+        }
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
+        color: #ff3e81;
+        margin-bottom: 1.4rem;
+        transition: transform 0.6s ease;
+        display: inline-block;
+    }
+
+    .card-body {
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #f5f1f4;
+        }
+
+        p,
+        li {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            font-weight: 300;
+            text-align: left;
+        }
+
+        ul,
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.shadow-text {
+    background: linear-gradient(to bottom, #ffffff, #888);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
+}

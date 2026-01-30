@@ -1,0 +1,223 @@
+{
+    "common": {
+        "back": "Atrás",
+        "home": "Inicio",
+        "collapsed": "Colapsar",
+        "expanded": "Expandir"
+    },
+    "landing": {
+        "tagline": "Ingeniera de software orientada al desarrollo de soluciones tecnológicas completas, con experiencia en el diseño, construcción y mejora de aplicaciones web enfocadas en la gestión de procesos empresariales. ",
+        "profession": "Ingeniera en Software",
+        "exploreCV": "Explora mi CV"
+    },
+    "header": {
+        "name": "Ing. Janneth Olivarez"
+    },
+    "sidebar": {
+        "title": "Datos Personales",
+        "labels": {
+            "nombres": "Nombres",
+            "email": "Correo electrónico",
+            "phone": "Teléfono",
+            "address": "Dirección",
+            "ci": "CI",
+            "birthDate": "Fecha Nacimiento",
+            "nationality": "Nacionalidad",
+            "civilStatus": "Estado Civil",
+            "languages": "Idiomas"
+        },
+        "values": {
+            "married": "Casada",
+            "ecuadorian": "Ecuatoriana",
+            "english": "Ingles intermedio"
+        }
+    },
+    "dashboard": {
+        "profile": "Soy ingeniera de software con un enfoque integral: no solo desarrollo código, sino que participo en todo el ciclo del producto, desde el análisis y diseño hasta el despliegue y la mejora continua. He trabajado con tecnologías como Java, Spring Boot, Angular, bases de datos relacionales y Docker, y tengo experiencia en metodologías ágiles. Me caracteriza la responsabilidad, la autonomía y la capacidad de entender el negocio para construir soluciones que realmente aporten valor.",
+        "cards": {
+            "cv": {
+                "title": "Explora MI CV",
+                "content": "Observa mi preparación académica, trayectoria laboral y capacitaciones."
+            },
+            "achievements": {
+                "title": "Mis logros",
+                "content": "Conoce mi experiencia a través de mis logros representativos a lo largo de mi trayectoria profesional."
+            },
+            "interests": {
+                "title": "Mis Intereses",
+                "content": "Conoce más sobre mí como profesional"
+            }
+        }
+    },
+    "resume": {
+        "steps": {
+            "education": "Formación Académica",
+            "experience": "Experiencia laboral",
+            "courses": "Cursos Realizados"
+        },
+        "education": {
+            "title": "Ingeniera en software",
+            "description": "Formación integral en la Universidad de las Fuerzas Armadas ESPE, enfocada en el desarrollo de software, arquitectura de sistemas, gestión de datos y aplicación de metodologías ágiles para entregar soluciones tecnológicas escalables.",
+            "relevantCerts": "Certificaciones relevantes",
+            "scrumMaster": {
+                "title": "Scrum Master",
+                "desc": "Certificación en gestión ágil."
+            },
+            "testing": {
+                "title": "Testing Sostenible",
+                "desc": "TDD, SOLID y Clean Code."
+            },
+            "fullstack": {
+                "title": "Fullstack Dev",
+                "desc": "Desarrollo integral (Java/Angular)."
+            },
+            "docker": {
+                "title": "Docker & K8s for devs",
+                "desc": "Contenedores y orquestación."
+            }
+        },
+        "experience": {
+            "detailedSummary": "Resumen Detallado",
+            "appliedTech": "Tecnologías aplicadas",
+            "company": "Empresa:",
+            "data": {
+                "1": {
+                    "cargo": "Desarrollador FullStack",
+                    "summary": "Análisis y desarrollo del Sistema empresarial para la gestión y administración de solicitudes de beneficios, como fideicomisos, y otros que el cliente oferta a sus colaboradores."
+                },
+                "2": {
+                    "cargo": "Desarrollador Front-End",
+                    "summary": "Desarrollador frontend del sistema empresarial, implantación y desarrollo de módulos. Se utilizaron herramientas de desarrollo como PostgreSQL, Angular y AxureRp para prototipado (creación de prototipos previo al desarrollo) de los desarrollos web.Se desarrolló de una aplicación web para dar soporte a los clientes de la empresa mediante la api de WhatsApp."
+                },
+                "3": {
+                    "cargo": "Consultor Técnico",
+                    "summary": "Soporte y desarrollo de subsistemas y módulos independientes para el sistema de Corporación Favorita."
+                },
+                "4": {
+                    "cargo": "Desarrollador Backend",
+                    "summary": "Desarrollador backend encargado de dar soporte al ERP de clientes y generación de reportes."
+                },
+                "5": {
+                    "cargo": "Desarrollador - Consultor Técnico",
+                    "summary": "Desarrollador fullstack encargado de dar soporte al sistema (Plataforma de pagos) e implementación de nuevo requerimientos del sistema."
+                }
+            }
+        },
+        "courses": {
+            "motivation": "Me capacito constantemente...",
+            "description": "A continuación, comparto una lista de capacitaciones que he realizado de manera autodidacta, con el propósito de seguir creciendo profesionalmente y afrontar mejor los desafíos de mi experiencia laboral. Aunque no cuentan con certificación formal, han aportado significativamente a mi desempeño y a los resultados obtenidos.",
+            "status": {
+                "completed": "Completado",
+                "inProcess": "En Proceso"
+            },
+            "data": {
+                "1": {
+                    "title": "Docker",
+                    "description": "Principios de contenedorización, componentes claves para optimizar el desarrollo y despliegues de aplicaciones software."
+                },
+                "2": {
+                    "title": "Microfrontends con Angular",
+                    "description": "Fundamentos de microarquitectura monolítica de aplicaciones SPA, ventajas y desventajas para diseñar microfront con angular."
+                },
+                "3": {
+                    "title": "Análisis de Requerimientos",
+                    "description": "Creación de estrategias de recolección de información efectivas a través de las técnicas de elicitación de requerimientos, clasificarla según su importancia a través de matrices de clasificación y modelar el negocio a través de cuatro vistas para identificar oportunidades para el software."
+                },
+                "4": {
+                    "title": "Microsoft Azure Fundamentals",
+                    "description": "Preparación para el examen Az-900 de Microsoft Azure Fundamentals."
+                },
+                "5": {
+                    "title": "TDD (Java)",
+                    "description": "Prácticas de codificación impulsado por pruebas en java utilizando ejemplos progresivos para comprender los principios TDD"
+                },
+                "6": {
+                    "title": "Unit testing en Angular",
+                    "description": "Implementación de pruebas unitarias en Angular para mejorar la calidad del código y facilitar el mantenimiento."
+                },
+                "7": {
+                    "title": "Fundamentos de UX / UI",
+                    "description": "Fundamentos y principios psicológicos y consejos prácticos para la experiencia de usuario para el desarrollo de aplicaciones amigables, llamativas y funcionales que capturen la atención del usuario final"
+                },
+                "8": {
+                    "title": "Flexbox y CSS Grid",
+                    "description": "Curso práctico de flexbox y css grid"
+                },
+                "9": {
+                    "title": "AWS CloudFormation",
+                    "description": "Introducción a la infraestructura como código, AWS CloudFormation es un servicio de AWS que permite aprovisionar y administrar recursos de AWS mediante plantillas."
+                },
+                "10": {
+                    "title": "Blockchain",
+                    "description": "Curso práctico y fundamentos para construir una Blockchain Cryptocurrency y Smart Contracts"
+                },
+                "11": {
+                    "title": "Diseño UX / UI",
+                    "description": "Experiencia de usuario para el desarrollo de aplicaciones amigables, llamativas y funcionales que capturen la atención del usuario final"
+                },
+                "12": {
+                    "title": "Lógica de programación",
+                    "description": "2.5h de curso práctico de lógica de programación que permite tener la habilidad para programar en cualquier lenguaje de programación"
+                }
+            }
+        }
+    },
+    "projects": {
+        "title": "Mis logros y mis proyectos",
+        "items": {
+            "administration": {
+                "title": "Sistema de administración y gestión de solicitudes",
+                "desc": "de beneficios corporativos y fideicomisos de colaboradores, sistematizando flujos de estados, documentaciones y cortrolando cambios de estado."
+            },
+            "factoring": {
+                "title": "Sistema de factoring",
+                "desc": "Herramienta financiera para agilizar procesos de liquidez mediante la gestión digital de facturas y cobros."
+            },
+            "whatsapp": {
+                "title": "Módulo Empresarial WhatsApp Bussiness Opcionauto",
+                "desc": "Módulo integrado a la plataformas empresarial para optimizar eficiencia y servicio de la empresa a sus clientes, mediante información personalizada en tiempo real."
+            },
+            "records": {
+                "title": "Sistema de gestión de historias clínicas",
+                "desc": "Plataforma integral para la gestión de información de varias áreas médicas de pacientes para consolidar historias clínica (HCE), bajo estándares médicos."
+            },
+            "crops": {
+                "title": "Sistema de gestión y monitoreo de cultivos",
+                "desc": "Solución tecnológica avanzada para el seguimiento en tiempo real y optimización de recursos agrícolas."
+            }
+        }
+    },
+    "interests": {
+        "title": "YO PROFESIONALMENTE",
+        "strengths": {
+            "title": "Fortalezas",
+            "items": [
+                "Sentido de responsabilidad.",
+                "Visión integral de los proyectos.",
+                "Capacidad de liderazgo natural.",
+                "Comunicación con diferentes perfiles.",
+                "Capacitación constante.",
+                "Ganas de automatizar todo lo posible."
+            ]
+        },
+        "interests": {
+            "title": "Lo que me interesa",
+            "items": [
+                "Entregar sistemas completos.",
+                "Liderar equipos técnicos.",
+                "Desarrollar soluciones tecnológicas escalables.",
+                "Estandarizar procesos.",
+                "Arquitectura de software."
+            ]
+        },
+        "weaknesses": {
+            "title": "Debilidades en las que trabajo",
+            "items": [
+                "Miedo a trabajar bajo presión.",
+                "Tener recursos limitados para hacer mi trabajo",
+                "Dificultad para negociar alcances y límites.",
+                "Tono de voz y expresiones faciales."
+            ]
+        }
+    }
+}

@@ -1,0 +1,65 @@
+<div class="intereses-wrapper">
+    <!-- Parallax Section -->
+    <section class="parallax-section">
+        <div class="parallax-container">
+            <div class="parallax-layer bg-layer" style="background-image: url('assets/img/janneth3.jpg');"></div>
+            <div class="parallax-layer overlay-layer">
+                <div class="floating-content">
+                    <img src="assets/img/bannerpersonal.png" alt="Habilidades" class="floating-img">
+                    <h3 class="display-1 fw-bold text-white shadow-text">{{ 'interests.title' | translate }}</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards Section -->
+    <section class="info-section container py-5">
+        <div class="info-cards-grid">
+            <!-- Card 1: Fortalezas -->
+            <div class="info-card premium-card">
+                <div class="card-icon">
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="card-body">
+                    <h3>{{ 'interests.strengths.title' | translate }}</h3>
+                    <ul>
+                        @for (item of ('interests.strengths.items' | translate); track item) {
+                        <li>{{ item }}</li>
+                        }
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- Card 2: Intereses -->
+            <div class="info-card premium-card">
+                <div class="card-icon">
+                    <i class="bi bi-heart-fill"></i>
+                </div>
+                <div class="card-body">
+                    <h3>{{ 'interests.interests.title' | translate }}</h3>
+                    <ul>
+                        @for (item of ('interests.interests.items' | translate); track item) {
+                        <li>{{ item }}</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 3: Habilidades -->
+            <div class="info-card premium-card">
+                <div class="card-icon">
+                    <i class="bi bi-tools"></i>
+                </div>
+                <div class="card-body">
+                    <h3>{{ 'interests.weaknesses.title' | translate }}</h3>
+                    <ul>
+                        @for (item of ('interests.weaknesses.items' | translate); track item) {
+                        <li>{{ item }}</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

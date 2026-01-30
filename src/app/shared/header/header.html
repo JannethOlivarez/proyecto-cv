@@ -1,0 +1,36 @@
+<header class="header-main">
+    <!-- Division Izquierda -->
+    <div class="header-left">
+        <div class="avatar-box">
+            <img src="/assets/img/default-avatar.png" alt="User Avatar" class="header-avatar">
+        </div>
+        <div class="app-info">
+            <span class="app-name">{{ 'header.name' | translate }}</span>
+        </div>
+        <div class="nav-control">
+            <button class="btn-icon" routerLink="/app/dashboard" title="Home">
+                <i class="bi bi-house-door-fill"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Division Derecha -->
+    <div class="header-right">
+        <div class="user-info">
+            <div class="user-badge">
+                <i class="bi bi-person-circle"></i>
+                <span class="user-text">Invitado</span>
+            </div>
+        </div>
+
+        <div class="lang-selector">
+            <app-language-switcher></app-language-switcher>
+        </div>
+
+        <div class="auth-control">
+            <button class="btn-icon logout" routerLink="/" title="Salir">
+                <i class="bi bi-box-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</header>

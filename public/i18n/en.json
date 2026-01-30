@@ -1,0 +1,223 @@
+{
+    "common": {
+        "back": "Back",
+        "home": "Home",
+        "collapsed": "Collapse",
+        "expanded": "Expand"
+    },
+    "landing": {
+        "tagline": "Software engineer focused on developing complete technological solutions, with experience in the design, construction and improvement of web applications focused on business process management.",
+        "profession": "Software Engineer",
+        "exploreCV": "Explore MY CV"
+    },
+    "header": {
+        "name": "Eng. Janneth Olivarez"
+    },
+    "sidebar": {
+        "title": "Personal Data",
+        "labels": {
+            "nombres": "Full Name",
+            "email": "Email",
+            "phone": "Phone",
+            "address": "Address",
+            "ci": "ID Number",
+            "birthDate": "Birth Date",
+            "nationality": "Nationality",
+            "civilStatus": "Civil Status",
+            "languages": "Languages"
+        },
+        "values": {
+            "married": "Married",
+            "ecuadorian": "Ecuadorian",
+            "english": "Intermediate English"
+        }
+    },
+    "dashboard": {
+        "profile": "I am a software engineer with an integral focus: I don't just develop code, I participate in the entire product cycle, from analysis and design to deployment and continuous improvement. I have worked with technologies such as Java, Spring Boot, Angular, relational databases, and Docker, and I have experience in agile methodologies. I am characterized by responsibility, autonomy, and the ability to understand the business to build solutions that truly provide value.",
+        "cards": {
+            "cv": {
+                "title": "Explore MY CV",
+                "content": "See my academic preparation, work history, and training."
+            },
+            "achievements": {
+                "title": "My Achievements",
+                "content": "Learn about my experience through my representative achievements throughout my professional career."
+            },
+            "interests": {
+                "title": "My Interests",
+                "content": "Learn more about me as a professional"
+            }
+        }
+    },
+    "resume": {
+        "steps": {
+            "education": "Academic Background",
+            "experience": "Work Experience",
+            "courses": "Completed Courses"
+        },
+        "education": {
+            "title": "Software Engineer",
+            "description": "Comprehensive training at the University of the Armed Forces ESPE, focused on software development, systems architecture, data management and application of agile methodologies to deliver scalable technological solutions.",
+            "relevantCerts": "Relevant Certifications",
+            "scrumMaster": {
+                "title": "Scrum Master",
+                "desc": "Agile management certification."
+            },
+            "testing": {
+                "title": "Sustainable Testing",
+                "desc": "TDD, SOLID, and Clean Code."
+            },
+            "fullstack": {
+                "title": "Fullstack Dev",
+                "desc": "Full development (Java/Angular)."
+            },
+            "docker": {
+                "title": "Docker & K8s for devs",
+                "desc": "Containers and orchestration."
+            }
+        },
+        "experience": {
+            "detailedSummary": "Detailed Summary",
+            "appliedTech": "Applied Technologies",
+            "company": "Company:",
+            "data": {
+                "1": {
+                    "cargo": "FullStack Developer",
+                    "summary": "Analysis and development of the enterprise system for managing and administering benefit requests, such as trusts, and others that the client offers to its collaborators."
+                },
+                "2": {
+                    "cargo": "Front-End Developer",
+                    "summary": "Frontend developer of the enterprise system, implementation and development of modules. Development tools such as PostgreSQL, Angular, and AxureRp were used for prototyping. A web application was developed to support clients via WhatsApp API."
+                },
+                "3": {
+                    "cargo": "Technical Consultant",
+                    "summary": "Support and development of subsystems and independent modules for the Corporación Favorita system."
+                },
+                "4": {
+                    "cargo": "Backend Developer",
+                    "summary": "Backend developer in charge of supporting the clients' ERP and generating reports."
+                },
+                "5": {
+                    "cargo": "Developer - Technical Consultant",
+                    "summary": "Fullstack developer in charge of supporting the system (Payment platform) and implementing new system requirements."
+                }
+            }
+        },
+        "courses": {
+            "motivation": "I constantly train myself...",
+            "description": "Below, I share a list of training courses that I have carried out self-taught, with the purpose of continuing to grow professionally and better face the challenges of my work experience. Although they do not have formal certification, they have contributed significantly to my performance and the results obtained.",
+            "status": {
+                "completed": "Completed",
+                "inProcess": "In Progress"
+            },
+            "data": {
+                "1": {
+                    "title": "Docker",
+                    "description": "Principles of containerization, key components to optimize development and deployment of software applications."
+                },
+                "2": {
+                    "title": "Microfrontends with Angular",
+                    "description": "Fundamentals of monolithic microarchitecture for SPA applications, advantages and disadvantages for designing microfronts with Angular."
+                },
+                "3": {
+                    "title": "Requirements Analysis",
+                    "description": "Creation of effective information gathering strategies through requirement elicitation techniques, classifying it according to its importance through classification matrices and modeling the business through four views to identify opportunities for the software."
+                },
+                "4": {
+                    "title": "Microsoft Azure Fundamentals",
+                    "description": "Preparation for the Az-900 Microsoft Azure Fundamentals exam."
+                },
+                "5": {
+                    "title": "TDD (Java)",
+                    "description": "Test-driven coding practices in Java using progressive examples to understand TDD principles."
+                },
+                "6": {
+                    "title": "Unit testing in Angular",
+                    "description": "Implementation of unit tests in Angular to improve code quality and facilitate maintenance."
+                },
+                "7": {
+                    "title": "UX / UI Fundamentals",
+                    "description": "Psychological principles and practical tips for user experience to develop friendly, striking and functional applications that capture the attention of the end user."
+                },
+                "8": {
+                    "title": "Flexbox and CSS Grid",
+                    "description": "Practical course on Flexbox and CSS Grid."
+                },
+                "9": {
+                    "title": "AWS CloudFormation",
+                    "description": "Introduction to infrastructure as code, AWS CloudFormation is an AWS service that allows provisioning and managing AWS resources using templates."
+                },
+                "10": {
+                    "title": "Blockchain",
+                    "description": "Practical course and fundamentals for building a Blockchain Cryptocurrency and Smart Contracts."
+                },
+                "11": {
+                    "title": "UX / UI Design",
+                    "description": "User experience for developing friendly, striking and functional applications that capture the attention of the end user."
+                },
+                "12": {
+                    "title": "Programming Logic",
+                    "description": "2.5h practical course on programming logic that allows having the ability to program in any programming language."
+                }
+            }
+        }
+    },
+    "projects": {
+        "title": "My Achievements and Projects",
+        "items": {
+            "administration": {
+                "title": "Request Administration and Management System",
+                "desc": "of corporate benefits and employee trusts, systematizing status flows, documentation, and controlling status changes."
+            },
+            "factoring": {
+                "title": "Factoring System",
+                "desc": "Financial tool to streamline liquidity processes through digital management of invoices and collections."
+            },
+            "whatsapp": {
+                "title": "Opcionauto WhatsApp Business Enterprise Module",
+                "desc": "Module integrated into business platforms to optimize efficiency and company service to its clients through personalized real-time information."
+            },
+            "records": {
+                "title": "Clinical Records Management System",
+                "desc": "Comprehensive platform for managing information from various medical areas of patients to consolidate electronic medical records (EMR), under medical standards."
+            },
+            "crops": {
+                "title": "Crop Management and Monitoring System",
+                "desc": "Advanced technological solution for real-time tracking and optimization of agricultural resources."
+            }
+        }
+    },
+    "interests": {
+        "title": "ME PROFESSIONALLY",
+        "strengths": {
+            "title": "Strengths",
+            "items": [
+                "Sense of responsibility.",
+                "Integral vision of projects.",
+                "Natural leadership ability.",
+                "Communication with different profiles.",
+                "Constant training.",
+                "Desire to automate everything possible."
+            ]
+        },
+        "interests": {
+            "title": "What interests me",
+            "items": [
+                "Delivering complete systems.",
+                "Leading technical teams.",
+                "Developing scalable technological solutions.",
+                "Standardizing processes.",
+                "Software architecture."
+            ]
+        },
+        "weaknesses": {
+            "title": "Weaknesses I work on",
+            "items": [
+                "Fear of working under pressure.",
+                "Having limited resources to do my job.",
+                "Difficulty negotiating scope and limits.",
+                "Tone of voice and facial expressions."
+            ]
+        }
+    }
+}

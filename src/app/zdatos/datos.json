@@ -1,0 +1,285 @@
+{
+    "datosPersonales": {
+        "nombres": "Janneth Natalí Olivarez Tenelema",
+        "email": "jannetholivarez@gmail.com",
+        "telefono": "0991269760",
+        "dirección": "Cotocollao – Quito",
+        "ci": "180450005-4",
+        "fechaNacimiento": "5 de enero de 1989",
+        "lugarNacimiento": "Ambato",
+        "nacionalidad": "Ecuatoriana",
+        "estadoCivil": "Casada",
+        "redes": {
+            "linkedin": "https://www.linkedin.com/in/janneth-olivarez-69687018a/"
+        },
+        "idiomas": "Ingles intermedio"
+    },
+    "resumeSummary": {
+        "steps": [
+            {
+                "id": 1,
+                "title": "Formación Académica",
+                "content": ""
+            },
+            {
+                "id": 2,
+                "title": "Experiencia laboral",
+                "content": "Content I: Información General"
+            },
+            {
+                "id": 3,
+                "title": "Cursos Realizados",
+                "content": ""
+            }
+        ],
+        "work_experience": [
+            {
+                "id": 1,
+                "date": "Ene 2024 - Dic 2025",
+                "cargo": "Desarrollador FullStack",
+                "empresa": "Softcosulting",
+                "description": "Softcosulting",
+                "summary": "Análisis y desarrollo del Sistema empresarial para la gestión y administración de solicitudes de beneficios, como fideicomisos, y otros que el cliente oferta a sus colaboradores.",
+                "tools": [
+                    "Java",
+                    "Spring Boot",
+                    "Spring Security",
+                    "Oracle",
+                    "Docker",
+                    "Node"
+                ],
+                "completed": true
+            },
+            {
+                "id": 2,
+                "date": "Ago 2022 - Jun 2023",
+                "cargo": "Desarrollador Front-End",
+                "empresa": "OPCIONAUTO",
+                "description": "",
+                "summary": "Desarrollador frontend del sistema empresarial, implantación y desarrollo de módulos. Se utilizaron herramientas de desarrollo como PostgreSQL, Angular y AxureRp para prototipado (creación de prototipos previo al desarrollo) de los desarrollos web.Se desarrolló de una aplicación web para dar soporte a los clientes de la empresa mediante la api de WhatsApp.",
+                "tools": [
+                    "Postgres",
+                    "Angular",
+                    "AxureRp"
+                ],
+                "completed": true
+            },
+            {
+                "id": 3,
+                "date": "ene 2021 - sep 2021",
+                "cargo": "Consultor Técnico",
+                "description": "",
+                "empresa": "KRUGER",
+                "summary": "Soporte y desarrollo de subsistemas y módulos independientes para el sistema de Corporación Favorita.",
+                "tools": [
+                    "Java",
+                    "Spring Boot",
+                    "MySQL",
+                    "Git",
+                    "Angular"
+                ],
+                "completed": true
+            },
+            {
+                "id": 4,
+                "date": "ene 2020-mar 2020",
+                "cargo": "Desarrollador Backend",
+                "empresa": "ALQUIMIA-SOFT",
+                "description": "Soporte al ERP de clientes y generación de reportes.",
+                "summary": "Desarrollador backend encargado de dar soporte al ERP de clientes y generación de reportes.",
+                "tools": [
+                    "Java",
+                    "Postgres",
+                    "Trello"
+                ],
+                "completed": true
+            },
+            {
+                "id": 5,
+                "date": "sep 2019 - dic 2020",
+                "cargo": "Desarrollador - Consultor Técnico",
+                "empresa": "X-CHANGE / KRUGER",
+                "description": "X -CHANGE / KRUGER",
+                "summary": "Desarrollador fullstack encargado de dar soporte al sistema (Plataforma de pagos) e implementación de nuevo requerimientos del sistema.",
+                "tools": [
+                    "Node",
+                    "Php",
+                    "Angular",
+                    "Postman",
+                    "Git"
+                ],
+                "completed": true
+            }
+        ],
+        "courses": [
+            {
+                "id": 1,
+                "date": "Agosto - 2025",
+                "title": "Docker",
+                "description": "Principios de contenedorización, componentes claves para optimizar el desarrollo y despliegues de aplicaciones software.",
+                "percentage": 100,
+                "imageName": "docker.png",
+                "completed": true
+            },
+            {
+                "id": 2,
+                "date": "Agosto - 2025",
+                "title": "Microfrontends con angular",
+                "description": "Fundamentos de microarquitectura monolítica de aplicaciones SPA, ventajas y desventajas para diseñar microfront con angular.",
+                "percentage": 100,
+                "completed": true,
+                "imageName": "microfront-angular.png"
+            },
+            {
+                "id": 3,
+                "date": "Septiembre - 2025",
+                "title": "Recolección y análisis de requermientos de software.",
+                "description": "Creación de estrategias de recolección de información efectivas a través de las técnicas de elicitación de requerimientos, clasificarla según su importancia a través de matrices de clasificación y modelar el negocio a través de cuatro vistas para identificar oportunidades para el software.",
+                "percentage": 100,
+                "completed": true,
+                "imageName": "requisitos.png"
+            },
+            {
+                "id": 4,
+                "date": "Octubre - 2025",
+                "title": "Fundamentos de Microsoft Azure Fundamentals",
+                "description": "Preparación para el examen Az-900 de Microsoft Azure Fundamentals.",
+                "percentage": 50,
+                "completed": true,
+                "imageName": "azure-300.png"
+            },
+            {
+                "id": 5,
+                "date": "Mayo - 2023",
+                "title": "TDD (Test Driven development - Java)",
+                "description": "Practicas de codificación impulsado por pruebas en java utilizando ejemplos progresivos para comprender los principios TDD",
+                "percentage": 100,
+                "completed": true,
+                "imageName": "tdd.png"
+            },
+            {
+                "id": 6,
+                "date": "Abril - 2023",
+                "title": "Pruebas unitarias en Angular",
+                "description": "Implementación de pruebas unitarias en Angular para mejorar la calidad del código y facilitar el mantenimiento.",
+                "percentage": 100,
+                "completed": true,
+                "imageName": "pruebasJasminKarma.png"
+            },
+            {
+                "id": 7,
+                "date": "Marzo - 2021",
+                "title": "Fundamentos de UX / UI",
+                "description": "Fundamentos y principios psicológicos y consejos pácticos para la experiencia de usuario para el desarrollo de aplicaciones amigables, llamativas y funcionales que capturen la atención del usuario final",
+                "percentage": 100,
+                "completed": true,
+                "imageName": "ux.png"
+            },
+            {
+                "id": 8,
+                "date": "Agosto - 2020",
+                "title": "Flexbox y CSS Grid",
+                "description": "Curso práctico de flexbox y css grid",
+                "percentage": 75,
+                "completed": true,
+                "imageName": "flexbox.png"
+            },
+            {
+                "id": 9,
+                "date": "Octubre - 2020",
+                "title": "AWS CloudFormation",
+                "description": "Introducción a la infraestructura como código, AWS CloudFormation es un servicio de AWS que permite aprovisionar y administrar recursos de AWS mediante plantillas.",
+                "percentage": 50,
+                "completed": true,
+                "imageName": "awscf_cover.png"
+            },
+            {
+                "id": 10,
+                "date": "Actualizado en Septiembre - 2025",
+                "title": "Blockchain",
+                "description": "Curso práctico y fundamentos para contruir una \"Blockchain\" Cryptocurrency y Smart Contracts",
+                "percentage": 30,
+                "completed": true,
+                "imageName": "blockchain.png"
+            },
+            {
+                "id": 11,
+                "date": "Julio - 2019",
+                "title": "Fundamentos de UX / UI",
+                "description": "Experiencia de usuario para el desarrollo de aplicaciones amigables, llamativas y funcionales que capturen la atención del usuario final",
+                "percentage": 100,
+                "completed": true,
+                "imageName": "ux.png"
+            },
+            {
+                "id": 12,
+                "date": "Octubre - 2018",
+                "title": "Lógica de programación",
+                "description": "2.5h de curso práctico de lógica de programación que permite tener la habilidad para programar en cualquier lenguaje de programación",
+                "percentage": 100,
+                "completed": true,
+                "imageName": "logica.png"
+            }
+        ],
+        "educacion": [
+            {
+                "id": 1,
+                "date": "Sep 2013 - Sep 2018",
+                "title": "Ingeniera en Software",
+                "description": "Carrera especializada en la creacion de sistemas software, de toda indole",
+                "tools": [
+                    "Angular",
+                    "Spring Boot",
+                    "MySQL",
+                    "AWS",
+                    "Docker",
+                    "Kubernetes"
+                ],
+                "completed": true
+            },
+            {
+                "id": 2,
+                "date": "Feb 2018",
+                "title": "CERTIFICACIÓN DE SCRUM MASTER",
+                "description": "Liderazgo de equipos ágiles, facilitación de ceremonias y gestión de impedimentos en proyectos complejos.",
+                "tools": [
+                    "JIRA"
+                ],
+                "completed": true
+            },
+            {
+                "id": 3,
+                "date": "Mayo - 2023",
+                "title": "CERTIFICACIÓN TESTING SOSTENIBLE - TYPESCRIPT",
+                "description": "Implementación de prácticas TDD (TEST DRIVEN DEVELOPMENT) y utilización de principios SOLID para mejora la calidad de código mantenible.",
+                "tools": [
+                    "Typescript",
+                    "Junit",
+                    "Mockito"
+                ],
+                "completed": true
+            },
+            {
+                "id": 4,
+                "date": "Junio - 2018",
+                "title": "CERTIFICACIÓN FULLSTACK DEVELOPER",
+                "description": "Implementación de pruebas unitarias en Angular para mejorar la calidad del código y facilitar el mantenimiento.",
+                "tools": [
+                    "Angular"
+                ],
+                "completed": true
+            },
+            {
+                "id": 5,
+                "date": "Nov 2025",
+                "title": "Docker y kubernetes para developers",
+                "description": "Arquitectura, creación y despliegues continuos de sistemas empresariales",
+                "tools": [
+                    "Docker",
+                    "Kubernetes"
+                ],
+                "completed": true
+            }
+        ]
+    }
+}

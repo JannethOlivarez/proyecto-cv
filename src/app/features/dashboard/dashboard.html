@@ -1,0 +1,67 @@
+<div class="dashboard-wrapper">
+    <div class="dashboard-header text-center mb-5">
+        <div class="profile-banner">
+            <div class="banner-content">
+                <!-- <div class="banner-header">
+                    <i class="bi bi-person-badge"></i>
+                    <h2>Perfil Profesional</h2>
+                </div> -->
+                <div class="banner-body">
+                    <p>
+                        {{ 'dashboard.profile' | translate }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <!-- Card 1: Experiencia -->
+        <div class="card-carousel" routerLink="/app/resume-summary">
+            <div class="card-image">
+                <img src="/assets/img/explorarcv.jpg" alt="Experiencia">
+                <div class="card-overlay"></div>
+            </div>
+            <div class="card-body">
+                <h3>{{ 'dashboard.cards.cv.title' | translate }}</h3>
+                <p>{{ 'dashboard.cards.cv.content' | translate }}</p>
+                <!-- <button class="btn-ir" routerLink="/app/resume-summary">
+                    <span>IR</span>
+                    <i class="bi bi-arrow-right-short"></i>
+                </button> -->
+            </div>
+        </div>
+
+        <!-- Card 2: Educación -->
+        <div class="card-carousel" routerLink="/app/freelancer">
+            <div class="card-image">
+                <img src="/assets/img/proyectos-exitosos.jpg" alt="Educación">
+                <div class="card-overlay"></div>
+            </div>
+            <div class="card-body">
+                <h3>{{ 'dashboard.cards.achievements.title' | translate }}</h3>
+                <p>{{ 'dashboard.cards.achievements.content' | translate }}</p>
+                <!-- <button class="btn-ir" routerLink="/app/educacion">
+                    <span>IR</span>
+                    <i class="bi bi-arrow-right-short"></i>
+                </button> -->
+            </div>
+        </div>
+
+        <!-- Card 3: Habilidades -->
+        <div class="card-carousel" routerLink="/app/intereses">
+            <div class="card-image">
+                <img src="/assets/img/habilidades.png" alt="Habilidades">
+                <div class="card-overlay"></div>
+            </div>
+            <div class="card-body">
+                <h3>{{ 'dashboard.cards.interests.title' | translate }}</h3>
+                <p>{{ 'dashboard.cards.interests.content' | translate }}</p>
+                <!-- <button class="btn-ir" routerLink="/app/habilidades">
+                    <span>IR</span>
+                    <i class="bi bi-arrow-right-short"></i>
+                </button> -->
+            </div>
+        </div>
+    </div>
+</div>

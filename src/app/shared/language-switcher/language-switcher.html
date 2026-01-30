@@ -1,0 +1,11 @@
+<div class="language-switcher-modern">
+    <button class="lang-btn" [class.active]="isSpanish()" (click)="toggleLang('es')" title="Castellano">
+        <span class="lang-text">ES</span>
+        <div class="underline"></div>
+    </button>
+    <div class="separator"></div>
+    <button class="lang-btn" [class.active]="!isSpanish()" (click)="toggleLang('en')" title="English">
+        <span class="lang-text">EN</span>
+        <div class="underline"></div>
+    </button>
+</div>

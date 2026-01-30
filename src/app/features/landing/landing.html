@@ -1,0 +1,53 @@
+<div class="landing">
+    <div class="landing-content">
+        <div class="card-modern">
+            <!-- Header Section -->
+            <div class="card-header-modern">
+                <div class="avatar-container">
+                    <img src="/assets/img/default-avatar.png" alt="Avatar" class="avatar">
+                    <div class="avatar-ring"></div>
+                </div>
+
+                <div class="info-section">
+                    <h1 class="name-title">JANNETH OLIVAREZ</h1>
+                    <h2 class="profession">{{ 'landing.profession' | translate }}</h2>
+                    <div class="contact-info">
+                        <span class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            jannetholivarez@gmail.com
+                        </span>
+                        <span class="contact-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            0991269760
+                        </span>
+                    </div>
+                </div>
+
+                <div class="language-toggle">
+                    <app-language-switcher></app-language-switcher>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <p class="tagline">
+                    {{ 'landing.tagline' | translate }}
+                </p>
+                <button type="button" class="btn-primary-custom" routerLink="/app/dashboard">
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    <span>{{ 'landing.exploreCV' | translate }}</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+</div>

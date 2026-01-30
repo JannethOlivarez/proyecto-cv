@@ -1,0 +1,240 @@
+<div class="stepper-wrapper">
+    <!-- Stepper Header -->
+    <div class="stepper-header">
+        @for (step of steps; track step.id; let last = $last) {
+        <div class="step-item" [class.active]="currentStep() === step.id" [class.completed]="currentStep() > step.id"
+            (click)="setStep(step.id)">
+            <div class="step-circle">{{ step.id }}</div>
+            <span class="step-title">{{ step.title | translate }}</span>
+        </div>
+        @if (!last) {
+        <div class="step-line" [class.active]="currentStep() > step.id"></div>
+        }
+        }
+    </div>
+
+    <!-- Step Content Area -->
+    <div class="step-content">
+        <div class="content-inner card card-body shadow-sm">
+            @switch (currentStep()) {
+            @case (1) {
+            <div class="education-layout">
+                <div class="education-column education-info">
+                    <div class="card education-card">
+                        <div class="card-header-custom">
+                            <h5 class="card-title-custom">{{ 'resume.education.title' | translate }}</h5>
+                        </div>
+                        <div class="card-img-container">
+                            <img src="/assets/img/espe.png" alt="ESPE" class="education-img">
+                        </div>
+                        <div class="card-description">
+                            <p>
+                                {{ 'resume.education.description' | translate }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-column education-details">
+                    <h2 style="color: white;">{{ 'resume.education.relevantCerts' | translate }}</h2>
+                    <div class="mini-cards-grid">
+                        <div class="mini-card">
+                            <!-- <div class="mini-card-icon"><i class="bi bi-patch-check-fill"></i></div> -->
+                            <div class="mini-card-content">
+                                <h6>{{ 'resume.education.scrumMaster.title' | translate }}</h6>
+                                <p>{{ 'resume.education.scrumMaster.desc' | translate }}</p>
+                                <div class="mini-progress-container">
+                                    <div class="mini-progress-bar" style="width: 100%"></div>
+                                </div>
+                                <span style="color: white; font-size: 10px;">100%</span>
+                            </div>
+                        </div>
+                        <div class="mini-card">
+                            <!-- <div class="mini-card-icon"><i class="bi bi-code-slash"></i></div> -->
+                            <div class="mini-card-content">
+                                <h6>{{ 'resume.education.testing.title' | translate }}</h6>
+                                <p>{{ 'resume.education.testing.desc' | translate }}</p>
+                                <div class="mini-progress-container">
+                                    <div class="mini-progress-bar" style="width: 100%"></div>
+                                </div>
+                                <span style="color: white; font-size: 10px;">100%</span>
+                            </div>
+                        </div>
+                        <div class="mini-card">
+                            <!-- <div class="mini-card-icon"><i class="bi bi-layers-fill"></i></div> -->
+                            <div class="mini-card-content">
+                                <h6>{{ 'resume.education.fullstack.title' | translate }}</h6>
+                                <p>{{ 'resume.education.fullstack.desc' | translate }}</p>
+                                <div class="mini-progress-container">
+                                    <div class="mini-progress-bar" style="width: 100%"></div>
+                                </div>
+                                <span style="color: white; font-size: 10px;">100%</span>
+                            </div>
+                        </div>
+                        <div class="mini-card">
+                            <!-- <div class="mini-card-icon"><i class="bi bi-box-seam-fill"></i></div> -->
+                            <div class="mini-card-content">
+                                <h6>{{ 'resume.education.docker.title' | translate }}</h6>
+                                <p>{{ 'resume.education.docker.desc' | translate }}</p>
+                                <div class="mini-progress-container">
+                                    <div class="mini-progress-bar" style="width: 80%"></div>
+                                </div>
+                                <span style="color: white; font-size: 10px;">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation Button to Courses -->
+                    <!-- <div class="education-footer">
+                        <button class="btn-step-nav" (click)="setStep(3)">
+                            <span>Ver Cursos Realizados</span>
+                            <i class="bi bi-arrow-right-circle-fill"></i>
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+            }
+            @case (2) {
+            <div class="timeline-container">
+                @for (item of workExperience; track item.id) {
+                <div class="timeline-item">
+                    <div class="timeline-date">{{ item.date }}
+                    </div>
+                    <div class="timeline-marker" [class.completed]="item.completed">
+                        @if (item.completed) {
+                        <i class="bi bi-check-circle-fill"></i>
+                        } @else {
+                        <div class="dot"></div>
+                        }
+                    </div>
+                    <div class="timeline-content" (mouseenter)="showPopover(item.id)" (mouseleave)="hidePopover()"
+                        (click)="toggleSummary(item.id)">
+                        <div class="course-card">
+                            <i class="bi bi-briefcase-fill"></i>
+                            <span>{{ 'resume.experience.data.' + item.id + '.cargo' | translate }}</span>
+                        </div>
+                        @if (expandedId() === item.id) {
+                        <div class="expansion-grid" (click)="$event.stopPropagation()">
+                            <button class="btn-close-expansion" (click)="closeSummary()">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </button>
+
+                            <div class="summary-container shadow-sm">
+                                <div class="expansion-header">
+                                    <h6 class="fw-bold text-uppercase m-0">{{ 'resume.experience.detailedSummary' |
+                                        translate }}</h6>
+                                </div>
+                                <div class="expansion-body">
+                                    <p>{{ 'resume.experience.data.' + item.id + '.summary' | translate }}</p>
+                                </div>
+                            </div>
+
+                            <div class="tools-expansion shadow-sm">
+                                <div class="expansion-header">
+                                    <h6 class="fw-bold text-uppercase m-0">{{ 'resume.experience.appliedTech' |
+                                        translate }}</h6>
+                                </div>
+                                <div class="expansion-body carousel-container">
+                                    <button class="carousel-control prev" (click)="scrollCarousel('left', $event)">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </button>
+                                    <div class="tools-grid">
+                                        @for (tool of item.tools; track tool) {
+                                        <div class="tool-mini-card">
+                                            <div class="tool-icon">
+                                                <img [src]="getToolIcon(tool)" [alt]="tool">
+                                            </div>
+                                            <span>{{ tool }}</span>
+                                        </div>
+                                        }
+                                    </div>
+                                    <button class="carousel-control next" (click)="scrollCarousel('right', $event)">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        }
+
+                        @if (activePopover() === item.id && expandedId() !== item.id) {
+                        <div class="popover-custom shadow" [class.sticky]="isSticky()"
+                            (click)="$event.stopPropagation()">
+                            @if (isSticky()) {
+                            <button class="btn-close-popover" (click)="closePopover()">
+                                <i class="bi bi-x"></i>
+                            </button>
+                            }
+                            <div class="popover-body">
+                                <h6 class="fw-bold text-uppercase">{{ 'resume.experience.company' | translate }}</h6>
+                                <p>{{ item.empresa }}</p>
+
+                                <!-- <h6 class="fw-bold text-uppercase mt-3">Herramientas utilizadas:</h6>
+                                <ul class="tools-list">
+                                    @for (tool of item.tools; track tool) {
+                                    <li>* {{ tool }}</li>
+                                    }
+                                </ul> -->
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+                }
+            </div>
+            }
+            @case (3) {
+            <div class="courses-grid">
+                <h5 class="section-title">{{ 'resume.courses.motivation' | translate }}</h5>
+                <p class="section-subtitle">{{ 'resume.courses.description' | translate }}</p>
+                @for (item of courses; track item.id) {
+                <div class="course-mini-card" [class.expanded]="expandedId() === item.id"
+                    (click)="toggleSummary(item.id)">
+                    <div class="course-img-container">
+                        <img [src]="'assets/img/cursos/' + item.imageName" [alt]="item.title" class="course-img"
+                            (error)="$any($event.target).src = 'assets/img/cursos/curso1.jpg'">
+                        <div class="course-img-overlay">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                    <div class="course-card-body">
+                        <h5 class="course-title">{{ 'resume.courses.data.' + item.id + '.title' | translate }}</h5>
+                        <div class="course-date">
+                            <i class="bi bi-calendar3"></i>
+                            <span>{{ item.date }}</span>
+                        </div>
+                        <div class="course-progress-wrapper">
+                            <div class="progress-label">
+                                <span>{{ (item.percentage === 100 ? 'resume.courses.status.completed' :
+                                    'resume.courses.status.inProcess') | translate }}</span>
+                                <span>{{ item.percentage }}%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" [style.width.%]="item.percentage"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @if (expandedId() === item.id) {
+                    <div class="course-popover shadow" (click)="$event.stopPropagation()">
+                        <button class="btn-close-popover" (click)="closeSummary()">
+                            <i class="bi bi-x"></i>
+                        </button>
+                        <div class="popover-body">
+                            <p>{{ 'resume.courses.data.' + item.id + '.description' | translate }}</p>
+                        </div>
+                    </div>
+                    }
+                </div>
+                }
+            </div>
+            }
+            }
+        </div>
+    </div>
+
+    <!-- Navigation Footer -->
+    <div class="stepper-footer">
+        <button class="btn-back" routerLink="/app/dashboard">
+            <span>{{ 'common.back' | translate }}</span>
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+</div>

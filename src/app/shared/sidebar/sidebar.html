@@ -1,0 +1,28 @@
+<div class="sidebar-container" [class.collapsed]="isCollapsed()">
+    <!-- Toggle Button -->
+    <div class="toggle-container">
+        @if (!isCollapsed()) {
+        <span class="sidebar-title">{{ 'sidebar.title' | translate }}</span>
+        }
+        <button class="btn-toggle" (click)="toggleSidebar()" [title]="isCollapsed() ? 'Expandir' : 'Colapsar'">
+            <i class="bi" [class.bi-chevron-right]="isCollapsed()" [class.bi-chevron-left]="!isCollapsed()"></i>
+        </button>
+    </div>
+
+    <!-- Info List -->
+    <div class="info-list">
+        @for (item of infoItems; track item.label) {
+        <div class="info-item" (click)="expand()" [title]="isCollapsed() ? item.label + ': ' + item.value : ''">
+            <div class="icon-box">
+                <i class="bi" [class]="item.icon"></i>
+            </div>
+            @if (!isCollapsed()) {
+            <div class="content-box">
+                <span class="label">{{ item.label | translate }}</span>
+                <span class="value">{{ item.translateValue ? (item.value | translate) : item.value }}</span>
+            </div>
+            }
+        </div>
+        }
+    </div>
+</div>
